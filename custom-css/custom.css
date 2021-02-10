@@ -1,0 +1,125 @@
+/*Footer fixed at bottom*/
+#sp-footer {
+    /*position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;*/
+    text-align: center;
+}
+
+/*end*/
+/*Title centered*/
+h1 {
+    text-align: center;
+}
+
+/*end*/
+/*Cards vorstand*/
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards_item {
+    display: flex;
+    padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .cards_item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards_item {
+        width: 33.3333%;
+    }
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card_content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card_title {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+
+.card_text {
+    color: black;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+
+.vorstand {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*end*/
+/*Cards teams*/
+.center {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.card_teams {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card_image_teams {
+    margin: auto;
+    width: 50%;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+/*end*/
