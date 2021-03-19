@@ -96,9 +96,21 @@ h1 {
     overflow: hidden;
 }
 /* Float four columns side by side */
+.column1 {
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+}
+
 .column2 {
     float: left;
     width: 50%;
+    padding: 0 10px;
+}
+
+.column3 {
+    float: left;
+    width: 33.3333%;
     padding: 0 10px;
 }
 
@@ -127,7 +139,17 @@ h1 {
 
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
+    .column1 {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
     .column2 {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .column3 {
         width: 100%;
         display: block;
         margin-bottom: 20px;
